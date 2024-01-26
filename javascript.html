@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <header>
+        <img src="images/web.png" alt="Web Development Logo" id="logo">
+        <h1>Mobile Application Development</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="javascript.html">JScript</a></li>
+            <li><a href="#">JSON</a></li>
+            <li><a href="#">Ajax</a></li>
+            <li><a href="#">Angular</a></li>
+        </ul>
+    </nav>
+    <aside>
+        <h2>Quick Links</h2>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#comaprison">Comparison</a></li>
+            <li><a href="#data">Variables & Data Types:</a></li>
+            <li><a href="#array">Arrays</a></li>
+            <li><a href="#object">Objects</a></li>
+            <li><a href="#function">Functions</a></li>
+            <li><a href="#dom">DOM</a></li>  
+            <li><a href="#arrow">Arrow Function</a></li>  
+            <li><a href="#restParam">Rest Parameter</a></li>
+        </ul>
+    </aside>
+    <main>
+        <h1>JavaScript</h1>
+        <section id="introduction">
+            <h2>Introduction </h2>
+            <p>Certainly! JavaScript is a versatile and widely-used programming language primarily known for its ability to add interactivity to web 
+                pages. Developed by Netscape in the mid-1990s, JavaScript has become an essential component of web development, allowing developers 
+                to create dynamic and responsive user interfaces.</p>
+            <p>To incorporate JavaScript into HTML, you can include your JavaScript code directly within "script" tags in the HTML document.</p>
+            <p>Here's an example:<br>
+                <img src="images/Jscript/Simple js code.png" alt="Simple js Code" id="jscode">
+            </p>
+        </section>
+        <section id="comparison">
+            <h2>Advantages of JavaScript</h2>
+            <ul>
+                <li>Enhanced User Interfaces: JavaScript boosts the interactivity of web pages, creating more engaging and dynamic user interfaces.</li>
+                <li>Accessible Learning Curve: JavaScript is beginner-friendly, with a syntax that resembles other widely-used programming languages, 
+                    making it easier for newcomers to pick up.</li>
+                <li>Universal Support: JavaScript enjoys widespread browser support, ensuring its compatibility across various platforms, contributing 
+                    to its status as a standard web technology.</li>
+                <li>Versatility Across the Stack: JavaScript's flexibility extends to both front-end and back-end development, allowing developers 
+                    to use the language throughout the entire web development stack.</li>
+            </ul>
+            <h2>Disadvantages of JavaScript</h2>
+            <ul>
+                <li>SBrowser Compatibility Challenges: Ensuring consistent behavior across different browsers can be difficult, requiring developers 
+                    to address variations in implementation and standards.</li>
+                <li>Security Risks: JavaScript's execution on the client side introduces security concerns, such as the risk of Cross-Site Scripting 
+                    (XSS) attacks, necessitating secure coding practices and input validation.</li>
+                <li>Single-Threaded Limitations: Operating in a single-threaded environment, JavaScript may face challenges in handling 
+                    computationally intensive tasks, potentially causing performance bottlenecks.</li>
+                <li>Browser-Dependent Performance: The performance of JavaScript code relies on the capabilities of individual browsers, 
+                    leading to variations that can impact the speed and responsiveness of web applications.</li>
+            </ul>
+        </section>
+        <section id="data">
+            <h2 id="variables">Variables & Data Types:</h2>
+            <p>Definition:
+                Variables in JavaScript serve as containers for storing data values. They are declared using keywords such as var, let, or const. 
+                Data types in JavaScript include primitive types like strings, numbers, booleans, as well as more complex types such as objects and 
+                arrays.</p>
+            <br>
+            <img src="images/Jscript/variable.png" alt="Variables" id="variables">
+            <h2 id="dataTypes">Data Types</h2>
+            <ol>
+                <li>var: Variables declared with 'var' are function-scoped, which means they are limited to the function they are declared in. 
+                    They are also hoisted to the top of their scope.</li>
+                <li>let: 'let' is block-scoped and allows the variable to be reassigned. It is not hoisted to the top of the block.</li>
+                <li>const: Similar to 'let' in terms of block-scoping, but variables declared with 'const' cannot be reassigned after declaration. 
+                    It is commonly used for values that should not be changed.</li>
+                <br>
+                <img src="images/Jscript/datatypes.png" alt="Datatypes" id="datatypes">
+            </ol>
+        </section>
+        <section id="array">
+            <h2>Arrays</h2>
+            <p>An array in JavaScript is a data structure that allows you to store multiple values within a single variable.</p>
+            <p>These values, known as elements, can be of any data type and are stored in a sequential order. 
+                Each element in the array is identified by an index, starting from 0 for the first element.</p>
+            <img src="images/Jscript/array.png" alt="Array" id="array">
+            <h2>Types of Array:</h2>
+            <ol>
+                <li>Accessing a particular element<br>
+                <ul>
+                    <li>document.write(fruits[0]);</li>
+                    <li>document.write(fruits[2]);</li>
+                </ul>   
+                </li>
+                <li>Removing the last element using the "pop" method<br>
+                <ul>
+                    <li>document.write(fruits.pop());</li>
+                </ul>   
+                </li>
+                <li>Adding a new element to the end using the "push" method<br>
+                <ul>
+                    <li>document.write(fruits.pop('pineapple'));</li>
+                </ul>   
+                </li>
+                <li>Removing elements starting from index 1, removing 2 elements, and adding new elements using the splice method<br>
+                <ul>
+                    <li>fruits.splice(1, 2, 'mango', 'strawberry');</li>
+                </ul>   
+                </li>
+            </ol>
+        </section>
+        <section id="object">
+            <h2>Objects</h2>
+            <p>Definition: Objects in JavaScript are complex data types that allow you to group related data and functions together.</p>
+            <p>Objects consist of key-value pairs, where each key is a property or method of the object.</p>
+            <img src="images/Jscript/object.png" alt="Objects" id="object">
+        </section>
+        <section id="function">
+            <h2>Functions</h2>
+            <ul>
+            <li>Definition: A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
+                <ul><li>function name(parameter1, parameter2, parameter3) {
+                    // code to be executed
+                  }</li></ul>
+            </li>
+            <li>Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).</li>
+            <li>The parentheses may include parameter names separated by commas:
+                (parameter1, parameter2, ...)</li>
+            </ul>
+            <img src="images/Jscript/function1.png" alt="Function" id="function">
+            <br>    
+            <img src="images/Jscript/function2.png" alt="Function" id="function">
+        </section>
+        <section id="dom">
+            <h2>Document Object Model (DOM)</h2>
+            <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of an HTML or XML document 
+                as a tree-like structure where each node in the tree corresponds to an element in the document.<br> 
+                The DOM provides a way for programs to manipulate the structure, style, and content of web documents dynamically.</p>
+            <h2>Key concepts related to the DOM:</h2>
+            <ol>
+                <li>Elements:
+                    <ul>
+                        <li>HTML elements like "div", "p", "span" are represented as nodes in the DOM.</li>
+                        <li>Elements are organized in a hierarchical structure, with parent-child relationships.</li>
+                    </ul>
+                </li>
+                <li>Nodes:
+                    <ul>
+                        <li>Nodes are individual entities in the DOM tree, representing elements, attributes, or textual content.</li>
+                        <li>The main types of nodes include element nodes, attribute nodes, and text nodes.</li>
+                    </ul>
+                </li>
+                <li>Attributes:
+                    <ul>
+                        <li>HTML element attributes, such as id, class, or src, are represented as attributes of corresponding element nodes 
+                            in the DOM.</li>                    
+                    </ul>
+                </li>
+                <li>Methods for Accessing Elements:
+                    <ul>
+                        <li>getElementById(id): Returns the element with the specified ID.</li>
+                        <li>getElementsByClassName(className): Returns a collection of elements with the specified class name.</li>
+                        <li>getElementsByTagName(tagName): Returns a collection of elements with the specified tag name.</li>
+                    </ul>
+                </li>
+                <li>Manipulating Content:
+                    <ul>
+                        <li>innerHTML: Modifies the HTML content within an element.</li>
+                        <li>style: Changes the design of the content</li>
+                        <li>textContent: Modifies the text content of an element as similar as the code.</li>
+                    </ul>
+                </li>
+            </ol>
+            <img src="images/Jscript/dom.png" alt="DOM" id="dom">
+        </section>
+        <section id="arrow">
+            <h2>Arrow Functions</h2>
+            <p>Allows you to write function expressions without the normal function and return keywords.</p>
+                <p>Exaplpe 1:</p><img src="images/Jscript/arrow1.png" alt="Rest parameters" id="arrow">
+                <br>
+                <p>Exaplpe 2:</p><img src="images/Jscript/arrow2.png" alt="Rest parameters" id="arrow">
+        </section>
+        <section id="restParam">
+            <h2>Rest parameters</h2>
+            <p>The rest parameter in JavaScript allows you to represent an indefinite number of arguments as an array. 
+                It is indicated by the ellipsis (...) followed by the parameter name. </p>
+                <img src="images/Jscript/restParam.png" alt="Rest parameters" id="restParam">
+        </section>
+    </main>
+    <footer>
+        <p>©MobileApplication</p>
+    </footer>
+</body>
+</html>

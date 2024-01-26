@@ -1,77 +1,138 @@
-
-body, h1, h2, p, ul, ol, li {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.8;
-    background-color: #f4f4f4;
-    color: #1d1d1d;
+    background-color: beige;
 }
-
-header {
-    background-color: #384e64;
-    color: #ffffff;
+.heading{
     text-align: center;
-    padding:21px;
+    color: black;
+    font-size: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-
-
-nav {
-    background-color: #1f72c4;
-    color: #ffffff;
+h1{
     text-align: center;
-    padding: 2px;
-
-    
+    font-size: 50px;
 }
-
-nav ul {
-    list-style-type:circle;
-    padding: 11px;
-    
+.navbar{ 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color:black; 
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
-
-nav ul li {
-    display: inline;
-    margin-right: 51px;
-    
-}
-
-nav a {
+.nav1{
     text-decoration: none;
-    color: #ecf0f1;
-    font-weight: bold;
+    color: white;
+    font-size: 24px;
 }
-
-aside {
-    background-color: #ffffff;
-    color: #007efd;
-    padding: 16px;
+.box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: justify;
+    padding: 50px;
+    box-shadow: 1px 2px 20px;
+    transition: 1s;
 }
-
-main {
-    max-width: 800px;
-    margin: 21px auto;
-    background-color: #ffffff;
-    padding: 21px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-section {
-    margin-bottom: 19px;
-}
-
-footer {
+.box1{
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    padding: 11px;
-    background-color: #273746;
-    color: #ecf0f1;
-    position: relative;
-    width: 100%;
-    bottom: 0;
+    justify-content:center;
+    text-decoration: none;
+
 }
+#sidebar{
+    color: purple;
+    text-decoration: none;
+    font-size: 27px;
+
+  }
+.sidelinks{
+    width: 300px;
+    height: 300px;
+}
+#sidebar1{
+    color: black;
+    font-size: 40px;
+  }
+
+.container{
+    height: 96%;
+    width:96%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    display: grid;
+    grid-gap: 30px;
+    grid-column-gap: 50px;
+    grid-template-columns: 1fr 1fr .5fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "sidelinks introduction jscode1"
+    "comp comp comp"
+    ". dat vari"
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . .";
+    margin-bottom: 40px;
+    /*position: relative;*/
+
+    
+}
+.foot{
+    border: thin solid;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-right: 9px;
+    padding-top: 10px;
+}
+.email{
+    text-decoration: none;
+    color: black;
+}
+#sidelinks{
+    grid-template-areas: sidelinks;
+    border: solid;
+}
+
+#introduction{
+    grid-template-areas: introduction;
+    width: 600px;
+    height: 300px;
+    border-radius:10px ;
+    border: solid;
+}
+.jscode1{
+    grid-template-areas: jscode1;
+    width: 475px;
+    height: 375px;
+    border-radius: 10px;
+    border: solid;
+}
+.comp{
+    border: solid;
+}
+.dat{
+    grid-template-areas: dat;
+}
+.vari{
+    grid-template-areas: vari;
+}
+
+
+
+
 
 
